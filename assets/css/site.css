@@ -444,3 +444,6 @@ legend+*{clear:both}
 .coll-group .work-card .slot-wrap{height:clamp(170px,19vw,270px);display:flex;align-items:flex-end;justify-content:center}
 .coll-group .grid-pc .work-card .slot-wrap{height:clamp(150px,15vw,210px)}
 .coll-group .work-card .slot-img{width:auto;max-width:100%;max-height:100%}
+
+/* sculpture photographed on white: let the mat colour show through */
+.on-white .slot-img{mix-blend-mode:multiply}
