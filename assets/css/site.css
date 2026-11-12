@@ -447,3 +447,31 @@ legend+*{clear:both}
 
 /* sculpture photographed on white: let the mat colour show through */
 .on-white .slot-img{mix-blend-mode:multiply}
+
+/* artist page v2 */
+.artist-hero__art{flex:1 1 520px;max-width:640px;margin:0;display:flex;flex-direction:column;gap:16px}
+.artist-hero__art .label{font-size:14px}
+.portrait-slot{flex:0 1 300px;margin:0;display:flex;flex-direction:column;gap:12px}
+.portrait-slot__frame{aspect-ratio:4/5;background:var(--ph);display:grid;place-items:center;text-align:center;border:1px solid var(--rule)}
+.portrait-slot__frame .mk{font-size:10px;letter-spacing:.2em;color:var(--muted);line-height:1.8}
+.own-words{padding-block:clamp(72px,9vw,128px)}
+.own-words figure{margin:0 auto;max-width:980px;text-align:center;align-items:center}
+.own-words blockquote{margin:0}
+.own-words blockquote p{font-family:var(--f-display);font-size:clamp(30px,4.2vw,54px);line-height:1.15;color:var(--on-wall);text-wrap:balance}
+.own-words blockquote p::before{content:"\201C"}.own-words blockquote p::after{content:"\201D"}
+.lin{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:32px;position:relative}
+.lin::before{content:"";position:absolute;left:0;right:0;top:7px;height:1px;background:var(--brass);opacity:.45}
+.lin__node{position:relative;padding-top:34px}
+.lin__node::before{content:"";position:absolute;top:0;left:0;width:15px;height:15px;border-radius:50%;border:1.5px solid var(--brass);background:var(--linen)}
+.lin__node.is-here::before{background:var(--laterite);border-color:var(--laterite)}
+.lin__card{display:flex;flex-direction:column;gap:6px;color:var(--ink);text-decoration:none}
+.lin__pic{display:block;background:var(--chalk);padding:14px;margin-bottom:10px;height:170px}
+.lin__pic img{width:100%;height:100%;object-fit:contain;display:block}
+.lin__pic.on-white img{mix-blend-mode:multiply}
+.lin__rel{font-size:10px;letter-spacing:.2em;color:var(--brass)}
+.is-here .lin__rel{color:var(--laterite)}
+.lin__name{font-family:var(--f-display);font-size:26px;line-height:1.15}
+a.lin__card:hover .lin__name{color:var(--brass)}
+.lin__d{font-size:14px;color:var(--muted)}
+.lin__txt{font-size:15px;line-height:1.5}
+@media (max-width:700px){.lin::before{left:7px;right:auto;top:0;bottom:0;width:1px;height:auto}.lin__node{padding-top:0;padding-left:34px}.lin__node::before{top:4px}}
