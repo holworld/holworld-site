@@ -491,3 +491,15 @@ a.lin__card:hover .lin__name{color:var(--brass)}
 .coll-group .grid>.work-card .slot-wrap{display:flex;width:100%}
 .coll-group .grid>.work-card .slot-img{max-height:100%}
 .sec--wall .plate:not(.plate--terra),.sec--deep .plate:not(.plate--terra){background:var(--wall-deep)}
+.tongue{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 28px;margin:0}
+.tongue__l{font-family:var(--f-display);font-size:clamp(30px,3.6vw,48px);line-height:1.35;color:var(--laterite);font-weight:400}
+.sec--wall .tongue__l,.sec--deep .tongue__l,.sec--laterite .tongue__l{color:var(--ochre)}
+.tongue__l:lang(bn){font-family:"Tiro Bangla",var(--f-display)}
+.tongue__l:lang(hi){font-family:"Tiro Devanagari Hindi",var(--f-display)}
+.tongue__l:lang(sa){font-family:"Tiro Devanagari Sanskrit",var(--f-display)}
+.tongue__l:lang(ur){font-family:"Noto Nastaliq Urdu",serif;font-size:clamp(26px,3vw,40px);line-height:1.9}
+.tongue__t{flex-basis:100%;font-size:13.5px;line-height:1.5;letter-spacing:.01em;color:var(--muted);font-family:var(--f-body)}
+.sec--wall .tongue__t,.sec--deep .tongue__t{color:var(--on-wall-muted)}
+.sec--laterite .tongue__t{color:var(--on-laterite-muted)}
+.ent .tongue__l{font-size:clamp(24px,2.6vw,32px)}
+.sec--laterite .tongue__l{color:var(--ochre-pale)}
