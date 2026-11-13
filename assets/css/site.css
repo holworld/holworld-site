@@ -554,3 +554,20 @@ a.lin__card:hover .lin__name{color:var(--brass)}
 .coll-group .grid-4{--hang:230px}.coll-group .grid-pc{--hang:170px}
 .coll-group .grid>.more-card .slot-wrap{display:flex;width:clamp(140px,15vw,200px);height:clamp(150px,15vw,210px)}
 @media (max-width:640px){:root{--frame-w:6px}.coll-group .grid-4{--hang:170px}.coll-group .grid-pc{--hang:130px}.wall-stage .mat,.artist-hero .mat,.hero-art .mat{--frame-w:10px}}
+/* ---------- letters pop-up ---------- */
+html.pop-open{overflow:hidden}
+.pop{position:fixed;inset:0;z-index:150;display:grid;place-items:center;padding:20px}
+.pop__scrim{position:absolute;inset:0;background:rgba(12,24,18,.62);opacity:0;transition:opacity .3s var(--ease)}
+.pop__card{position:relative;width:min(520px,100%);max-height:calc(100dvh - 40px);overflow:auto;background:var(--chalk);color:var(--ink);padding:clamp(28px,4vw,44px);display:flex;flex-direction:column;gap:16px;border-top:6px solid var(--laterite);box-shadow:0 30px 70px -20px rgba(0,0,0,.55);opacity:0;transform:translateY(16px) scale(.98);transition:opacity .3s var(--ease),transform .35s var(--ease)}
+.pop.is-on .pop__scrim{opacity:1}
+.pop.is-on .pop__card{opacity:1;transform:none}
+.pop__card .eyebrow{color:var(--brass)}
+.pop__title{font-size:clamp(28px,3.2vw,38px);line-height:1.12;padding-right:28px}
+.pop__x{position:absolute;top:12px;right:12px;width:44px;height:44px;display:grid;place-items:center;border:0;background:transparent;color:var(--muted);cursor:pointer;border-radius:50%}
+.pop__x:hover{color:var(--ink);background:var(--linen)}
+.pop__x svg{width:20px;height:20px}
+.pop form{margin-top:4px}
+.pop .actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;margin-top:6px}
+.pop .tiny a{color:inherit}
+@media (max-width:640px){.pop{place-items:end center;padding:0}.pop__card{width:100%;max-height:92dvh;border-top-width:5px}}
+@media (prefers-reduced-motion:reduce){.pop__scrim,.pop__card{transition:none;transform:none}}

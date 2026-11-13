@@ -208,6 +208,89 @@
     if (first) pick(first);
   });
 
+  /* ---------------- letters pop-up: once for a new visitor, then not again for a month ---------------- */
+  var pop = null;
+  (function () {
+    var page = (location.pathname.split("/").pop() || "index.html").replace(/\.html$/, "");
+    if (/^(write-to-us|privacy|404)$/.test(page)) return;
+    var KEY = "hol-letters-popup";
+    var seen = null;
+    try { seen = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (e) {}
+    if (seen && (seen.done || Date.now() - seen.t < 30 * 864e5)) return;
+    function remember(done) { try { localStorage.setItem(KEY, JSON.stringify({ t: Date.now(), done: !!done })); } catch (e) {} }
+
+    pop = document.createElement("div");
+    pop.className = "pop";
+    pop.hidden = true;
+    pop.setAttribute("role", "dialog");
+    pop.setAttribute("aria-modal", "true");
+    pop.setAttribute("aria-labelledby", "pop-title");
+    pop.innerHTML =
+      '<div class="pop__scrim" data-pop-close></div>' +
+      '<div class="pop__card">' +
+        '<button type="button" class="pop__x" data-pop-close aria-label="Close"><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 5l10 10M15 5 5 15"/></svg></button>' +
+        '<p class="mk eyebrow">Letters from the house</p>' +
+        '<h2 class="h-l pop__title" id="pop-title">The masters can’t write to you any more. We can.</h2>' +
+        '<p class="muted">New works as they come into the house, exhibitions before they open, and the odd story worth telling. One letter, on Sunday mornings.</p>' +
+        '<form class="col gap-14" data-form="letters-popup" data-subject="Please add me to letters from the house" novalidate>' +
+          '<input type="hidden" name="_subject" value="New sign-up: Letters from the House">' +
+          '<div class="fld"><label for="pop-name">Your name</label><input id="pop-name" name="name" class="f-in" type="text" autocomplete="name" required></div>' +
+          '<div class="fld"><label for="pop-email">Your email</label><input id="pop-email" name="email" class="f-in" type="email" autocomplete="email" required></div>' +
+          '<div class="fld"><label for="pop-phone">Phone or WhatsApp <span class="muted">(if you like)</span></label><input id="pop-phone" name="phone" class="f-in" type="tel" autocomplete="tel" inputmode="tel"></div>' +
+          '<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">' +
+          '<div class="actions"><button type="submit" class="btn btn--ink">Write to me</button><button type="button" class="tl no-arrow muted" data-pop-close style="color:var(--muted)">Maybe later</button></div>' +
+          '<p class="tiny muted">We use these only to write to you, and you can stop the letters whenever you like. <a href="privacy.html">Privacy</a></p>' +
+        '</form>' +
+        '<div class="col gap-14" data-sent hidden>' +
+          '<p class="h-m">Welcome to the house.</p>' +
+          '<p class="muted">Your first letter will find you on a Sunday morning.</p>' +
+          '<p class="small muted" data-sent-mail hidden>Your email app should have opened with a short note to us. Press send there and we will add you.</p>' +
+          '<div class="actions"><button type="button" class="btn btn--ink" data-pop-close>Back to the house</button></div>' +
+        '</div>' +
+      '</div>';
+    document.body.appendChild(pop);
+
+    var lastFocus = null, opened = false, timer = null;
+    function open() {
+      if (opened || document.body.classList.contains("menu-open")) return;
+      opened = true;
+      window.removeEventListener("scroll", onScrollOpen);
+      clearTimeout(timer);
+      lastFocus = document.activeElement;
+      pop.hidden = false;
+      document.documentElement.classList.add("pop-open");
+      requestAnimationFrame(function () { pop.classList.add("is-on"); });
+      var first = $("#pop-name", pop);
+      setTimeout(function () { if (first) first.focus({ preventScroll: true }); }, reduce ? 0 : 250);
+    }
+    function close() {
+      if (pop.hidden) return;
+      pop.classList.remove("is-on");
+      document.documentElement.classList.remove("pop-open");
+      setTimeout(function () { pop.hidden = true; }, reduce ? 0 : 300);
+      if (!pop.dataset.done) remember(false);
+      if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+    }
+    $$("[data-pop-close]", pop).forEach(function (el) { el.addEventListener("click", close); });
+    pop.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") { close(); return; }
+      if (e.key !== "Tab") return;
+      var f = $$("button, a[href], input:not([type=hidden]):not([tabindex='-1'])", pop).filter(function (el) { return el.offsetParent !== null; });
+      if (!f.length) return;
+      if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+      else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+    });
+    $("form", pop).addEventListener("hol:sent", function () { pop.dataset.done = "1"; remember(true); });
+
+    var start = Date.now();
+    function onScrollOpen() {
+      var depth = (window.scrollY + window.innerHeight) / Math.max(document.documentElement.scrollHeight, 1);
+      if (depth > 0.45 && Date.now() - start > 6000) open();
+    }
+    window.addEventListener("scroll", onScrollOpen, { passive: true });
+    timer = setTimeout(open, 15000);
+  })();
+
   /* ---------------- forms: send to the gallery ----------------
      If a form service address is set (window.HOL.endpoint), letters are posted there.
      Until then, the visitor's own email app opens with the letter written out, addressed to the gallery. */
@@ -275,6 +358,7 @@
   function done(form, viaMail) {
     var sent = form.parentNode.querySelector("[data-sent]");
     form.hidden = true;
+    try { form.dispatchEvent(new CustomEvent("hol:sent")); } catch (e) {}
     if (sent) {
       if (viaMail) { var m = $("[data-sent-mail]", sent); if (m) m.hidden = false; }
       sent.hidden = false;
