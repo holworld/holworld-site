@@ -2,9 +2,6 @@
 
 The website for House of Legends, South Delhi: holworld.com
 
-This folder is the finished site. Every page is already built, so there is nothing to install or run.
-Upload everything in this folder to the GitHub repository as it is, keeping the folder structure.
+A static site served by GitHub Pages from this repository, with DNS at name.com. Every page is already built, so there is nothing to install or run: edit the HTML, CSS or images and push to `main`.
 
-To put it online with Cloudflare Pages: connect the repository, leave the build command empty, and set the output folder to `/` (the repository root).
-
-Works in the collection, with their photographs in `assets/img/works/`, come from the House of Legends Private Viewing catalogue (v20). Images still in `assets/img/review/` are stand-ins (archival photographs, murals, Santiniketan) to be replaced before launch.
+Photographs of the works live in `assets/img/works/`: a `.jpg` master, a `.webp` for the page and a smaller `.webp` in `thumb/` for grids. Each photograph is cropped to the edge of the work itself, with frames, mounts and background removed. If you replace a photograph, keep all three files and update the `width` and `height` on the pages that show it.
