@@ -511,3 +511,46 @@ a.lin__card:hover .lin__name{color:var(--brass)}
 @media (max-width:640px){.to-top{padding:0;width:48px;justify-content:center}.to-top span{display:none}}
 @media (prefers-reduced-motion:reduce){.to-top,.to-top.is-on{transition:none;transform:none}}
 .foot{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+.more-card .mat--chalk{background:var(--linen)}
+.coll-group .grid>.more-card .slot-wrap,.more-card .slot-wrap{display:flex;align-items:center;justify-content:center;border:1px solid var(--rule)}
+.more-card .slot-wrap:not(.coll-group *){height:clamp(170px,19vw,270px)}
+.more-card__n{font-family:var(--f-display);font-size:clamp(44px,5vw,64px);line-height:1;color:var(--laterite);transition:transform .4s var(--ease)}
+.more-card:hover .more-card__n{transform:scale(1.06)}
+.more-card .who{color:var(--brass)}
+.more-card:hover .who{text-decoration:underline;text-underline-offset:4px}
+.others{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(168px,100%),1fr));gap:32px 22px}
+.other{display:flex;flex-direction:column;gap:8px;color:var(--ink);text-decoration:none}
+.other__pic{height:130px;background:var(--chalk);display:flex;align-items:flex-end;justify-content:center;padding:12px;margin-bottom:6px;transition:box-shadow .4s var(--ease),transform .4s var(--ease)}
+.other__pic img{max-width:100%;max-height:100%;width:auto;height:auto;display:block}
+.other:hover .other__pic{transform:translateY(-3px);box-shadow:var(--hang-light)}
+.other__name{font-family:var(--f-display);font-size:21px;line-height:1.15}
+.other:hover .other__name{color:var(--brass)}
+.other__meta{font-size:13.5px;color:var(--muted)}
+@media (max-width:640px){.others{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 14px}.other__pic{height:110px}}
+/* ---------- full-bleed painting on the home page ---------- */
+.bleed__img{display:block;line-height:0}
+.bleed__img img{display:block;width:100%;height:auto}
+.band.bleed figcaption a{color:var(--brass-lite)}
+
+/* ---------- museum frames: dark wood moulding, a gilt sight edge, the mat as mount ---------- */
+:root{--frame-w:9px;--frame-wood:linear-gradient(145deg,#4b3926 0%,#2a1e14 38%,#1b130c 62%,#3d2d1e 100%);--frame-shadow:0 22px 40px -22px rgba(10,8,5,.6),0 4px 10px -6px rgba(10,8,5,.35)}
+.mat,.mat--chalk,.mat--wall{border:var(--frame-w) solid #2a1e14;border-image:var(--frame-wood) 1;box-shadow:inset 0 0 0 2px #b8955a,inset 0 0 0 3px rgba(0,0,0,.18),var(--frame-shadow)!important}
+.mat .slot-img,.mat--chalk .slot-img,.mat--wall .slot-img{box-shadow:0 0 0 1px rgba(0,0,0,.14),0 1px 3px rgba(0,0,0,.12)}
+.wall-stage .mat,.artist-hero .mat,.hero-art .mat{--frame-w:16px}
+.work-card .mat--chalk{--frame-w:7px}
+.mat--chalk{background:#f7f5ef}
+/* artworks shown without a mat get one drawn round the picture itself */
+.unveil .slot-img,.grid>.art>a>.slot-wrap>.slot-img,.side .slot-img,.hero-art>.slot-wrap>.slot-img{padding:clamp(14px,2vw,24px);background:#f7f5ef;border:12px solid #2a1e14;border-image:var(--frame-wood) 1;box-shadow:inset 0 0 0 2px #b8955a,var(--frame-shadow);box-sizing:border-box}
+/* sculpture is never framed; nor are navigation thumbnails or the "see all" tiles */
+.mat:has(img[src*="amarnath-sehgal"]),.mat--chalk:has(img[src*="amarnath-sehgal"]),.mat--chalk:has(img[src*="thota-vaikuntam"]),.mat:has(img[src*="thota-vaikuntam"]),
+.pc-strip .mat--chalk,.more-card .mat--chalk{border:0!important;box-shadow:none!important}
+.pc-strip .mat--chalk{border:1px solid var(--rule)!important}
+.more-card .mat--chalk{background:var(--linen)}
+/* collection grids hang the same way as everywhere else, now that every work has a frame */
+.coll-group .grid{align-items:end}
+.coll-group .grid>.work-card>[class^="mat"]{display:inline-block;align-self:flex-start;max-width:100%}
+.coll-group .grid>.work-card .slot-wrap{display:block;width:auto;height:auto}
+.coll-group .grid>.work-card .slot-img{width:auto;max-width:100%;max-height:var(--hang,240px)}
+.coll-group .grid-4{--hang:230px}.coll-group .grid-pc{--hang:170px}
+.coll-group .grid>.more-card .slot-wrap{display:flex;width:clamp(140px,15vw,200px);height:clamp(150px,15vw,210px)}
+@media (max-width:640px){:root{--frame-w:6px}.coll-group .grid-4{--hang:170px}.coll-group .grid-pc{--hang:130px}.wall-stage .mat,.artist-hero .mat,.hero-art .mat{--frame-w:10px}}
