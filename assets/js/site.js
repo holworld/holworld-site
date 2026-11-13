@@ -284,6 +284,28 @@
     }
   }
 
+  /* ---------------- back to the top: a floating button once the page has been scrolled ---------------- */
+  (function () {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "to-top";
+    b.setAttribute("aria-label", "Back to the top of the page");
+    b.innerHTML = '<svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 16V4M4.5 9.5 10 4l5.5 5.5"/></svg><span>Top</span>';
+    document.body.appendChild(b);
+    var shown = false;
+    function check() {
+      var on = window.scrollY > Math.max(600, window.innerHeight * 1.2);
+      if (on !== shown) { shown = on; b.classList.toggle("is-on", on); }
+    }
+    window.addEventListener("scroll", check, { passive: true });
+    b.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+      var target = document.getElementById("main") || document.body;
+      if (target && target.focus) { target.setAttribute("tabindex", "-1"); target.focus({ preventScroll: true }); }
+    });
+    check();
+  })();
+
   /* ---------------- year in footer ---------------- */
   $$("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
 
