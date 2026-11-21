@@ -395,3 +395,82 @@
 
   onScroll();
 })();
+
+/* ---------------- artists index, collection filters, soft image loading (Nov 2026) ---------------- */
+(function () {
+  var $$ = function (s, el) { return Array.prototype.slice.call((el || document).querySelectorAll(s)); };
+
+  // tiles fade in as each picture arrives
+  function soft(img) {
+    if (img.complete && img.naturalWidth) { img.classList.add("is-in"); return; }
+    img.addEventListener("load", function () { img.classList.add("is-in"); }, { once: true });
+    img.addEventListener("error", function () { img.classList.add("is-in"); }, { once: true });
+  }
+  $$(".atile__pic img, .pn__pic img").forEach(soft);
+
+  // Artists: show a group, or everyone A to Z
+  var bar = document.querySelector("[data-abar]");
+  if (bar) {
+    var groups = $$("[data-agroup]"), wrap = document.querySelector("[data-agroups]"), az = document.querySelector("[data-az-grid]");
+    var azBtn = bar.querySelector("[data-az]"), show = "all", sorted = false;
+    var tiles = $$(".atile", wrap);
+    tiles.forEach(function (t, i) { t.dataset.home = i; });
+    function apply() {
+      $$("[data-show]", bar).forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.show === show); });
+      azBtn.setAttribute("aria-pressed", sorted);
+      if (sorted) {
+        var list = tiles.filter(function (t) { return show === "all" || t.dataset.group === show; })
+          .sort(function (a, b) { return a.dataset.sort.localeCompare(b.dataset.sort); });
+        az.innerHTML = ""; list.forEach(function (t) { az.appendChild(t); });
+        wrap.hidden = true; az.hidden = false;
+      } else {
+        tiles.sort(function (a, b) { return a.dataset.home - b.dataset.home; }).forEach(function (t) {
+          var g = groups.filter(function (x) { return x.dataset.agroup === t.dataset.group; })[0];
+          g.querySelector(".atiles").appendChild(t);
+        });
+        groups.forEach(function (g) { g.hidden = !(show === "all" || g.dataset.agroup === show); });
+        wrap.hidden = false; az.hidden = true;
+      }
+      try { var u = new URL(location.href); u.searchParams.delete("show"); u.searchParams.delete("sort");
+        if (show !== "all") u.searchParams.set("show", show); if (sorted) u.searchParams.set("sort", "az");
+        history.replaceState(null, "", u); } catch (e) {}
+    }
+    bar.addEventListener("click", function (e) {
+      var b = e.target.closest("button"); if (!b) return;
+      if (b.hasAttribute("data-az")) sorted = !sorted; else if (b.dataset.show) show = b.dataset.show;
+      apply();
+    });
+    try { var q = new URLSearchParams(location.search);
+      if (q.get("show") && groups.some(function (g) { return g.dataset.agroup === q.get("show"); })) show = q.get("show");
+      sorted = q.get("sort") === "az"; } catch (e) {}
+    if (show !== "all" || sorted) apply();
+  }
+
+  // Collection: filter by artist and by kind of work
+  var cbar = document.querySelector("[data-cbar]");
+  if (cbar) {
+    var grid = document.querySelector("[data-c-grid]"), cards = $$(".work-card", grid);
+    var sel = cbar.querySelector("[data-c-artist]"), out = cbar.querySelector("[data-c-count]");
+    var empty = document.querySelector("[data-c-empty]"), medium = "all";
+    function run(push) {
+      var a = sel.value, n = 0;
+      cards.forEach(function (c) {
+        var on = (!a || c.dataset.artist === a) && (medium === "all" || c.dataset.medium === medium);
+        c.hidden = !on; if (on) n++;
+      });
+      $$("[data-c-medium]", cbar).forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.cMedium === medium); });
+      out.textContent = n + (n === 1 ? " work" : " works");
+      empty.hidden = n > 0;
+      if (push) try { var u = new URL(location.href); u.searchParams.delete("artist"); u.searchParams.delete("kind");
+        if (a) u.searchParams.set("artist", a); if (medium !== "all") u.searchParams.set("kind", medium);
+        history.replaceState(null, "", u); } catch (e) {}
+    }
+    sel.addEventListener("change", function () { run(true); });
+    cbar.addEventListener("click", function (e) { var b = e.target.closest("[data-c-medium]"); if (!b) return; medium = b.dataset.cMedium; run(true); });
+    document.addEventListener("click", function (e) { if (e.target.closest("[data-c-clear]")) { sel.value = ""; medium = "all"; run(true); } });
+    try { var q = new URLSearchParams(location.search);
+      if (q.get("artist") && sel.querySelector('option[value="' + q.get("artist").replace(/[^a-z-]/g, "") + '"]')) sel.value = q.get("artist");
+      if (q.get("kind") && cbar.querySelector('[data-c-medium="' + q.get("kind").replace(/[^a-z]/g, "") + '"]')) medium = q.get("kind"); } catch (e) {}
+    run(false);
+  }
+})();

@@ -19,9 +19,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&amp;family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&amp;family=Montserrat:wght@700&amp;display=swap">
-<link rel="stylesheet" href="assets/css/site.css?v=20261113e">
+<link rel="stylesheet" href="assets/css/site.css?v=20261121a">
 <script>document.documentElement.className=document.documentElement.className.replace("no-js","js");window.HOL={"email":"hello@holworld.com","endpoint":"https://formspree.io/f/xkjjeaob"};</script>
-<script src="assets/js/site.js?v=20261113e" defer></script>
+<script src="assets/js/site.js?v=20261121a" defer></script>
 </head>
 <body class="page-collection">
 <a class="skip" href="#main">Skip to content</a>
@@ -30,12 +30,11 @@
 <a class="hdr__logo" href="index.html" aria-label="House of Legends, home"><img src="assets/img/logo/hol-logo-white.svg" alt="House of Legends" width="170" height="64"></a>
 <nav class="nav mk" aria-label="Main">
 <a href="story.html">The story</a>
-<a href="masters.html">The masters</a>
-<a href="santiniketan.html">Santiniketan</a>
+<a href="artists.html">Artists</a>
 <a href="collection.html" aria-current="page">Collection</a>
 <a href="journal.html">Journal</a>
 <a href="visit.html">Visit</a>
-<a href="write-to-us.html">Write to us</a>
+<a href="write-to-us.html" class="nav__cta">Write to us</a>
 </nav>
 <button type="button" class="menu-btn mk" data-menu-open aria-expanded="false" aria-controls="menu">Menu <svg aria-hidden="true" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 8h16M3 15h16"/></svg></button>
 </div>
@@ -49,8 +48,7 @@
 <nav class="wrap menu__nav" aria-label="Main">
 <a href="index.html">Home</a>
 <a href="story.html">The story</a>
-<a href="masters.html">The masters</a>
-<a href="santiniketan.html">Santiniketan</a>
+<a href="artists.html">Artists</a>
 <a href="collection.html" aria-current="page">Collection</a>
 <a href="journal.html">Journal</a>
 <a href="visit.html">Visit</a>
@@ -58,7 +56,7 @@
 </nav>
 <div class="wrap menu__foot">
 <p>South Delhi · Address coming soon</p>
-<p>Opening 1 December 2026</p>
+<p>Opening soon</p>
 </div>
 </div>
 
@@ -68,7 +66,7 @@
 <div class="wrap col gap-32 anim-hero">
 <p class="mk eyebrow">The collection</p>
 <h1 class="h-xl" style="max-width:9em">The works as they survive</h1>
-<p class="lede">Seventy-eight works and fourteen painted postcards, gathered artist by artist: Abanindranath and Gaganendranath Tagore, Nandalal Bose, Ramkinkar Baij, the painters who worked around them, and the moderns who came after. Each is shown whole, with its wall label and its story, the way a museum would show it.</p>
+<p class="lede">Ninety-two works in our care, from finished paintings to the studies, drawings and painted postcards behind them. Filter by artist or by kind of work, and open any piece to see it whole, with its wall label and its story.</p>
 </div>
 </section>
 
@@ -82,320 +80,385 @@
 </div>
 <p class="muted" style="max-width:28em">Every work here can be seen in person. Write to us and we will set a quiet room aside, with the work, its record and a condition report ready for you.</p>
 </div>
-<nav class="chips coll-chips" aria-label="Jump to an artist">
-<a class="chip" href="#abanindranath-tagore">Abanindranath Tagore</a>
-<a class="chip" href="#gaganendranath-tagore">Gaganendranath Tagore</a>
-<a class="chip" href="#nandalal-bose">Nandalal Bose</a>
-<a class="chip" href="#ramkinkar-baij">Ramkinkar Baij</a>
-<a class="chip" href="#circle">Their circle and their contemporaries</a>
-<a class="chip" href="#a-a-almelkar">A. A. Almelkar</a>
-<a class="chip" href="#amarnath-sehgal">Amarnath Sehgal</a>
-<a class="chip" href="#thota-vaikuntam">Thota Vaikuntam</a>
-<a class="chip" href="#postcards">The postcards</a>
-</nav>
-<div class="coll-group col gap-48" id="abanindranath-tagore">
-<div class="row-between coll-head">
-<div class="col gap-14 measure">
-<h2 class="h-l">Abanindranath Tagore <span class="coll-dates">1871–1951</span></h2>
-<p class="muted">The founder of the Bengal School, who turned Indian painting back toward its own traditions.</p>
+<div class="cbar" data-cbar>
+<div class="fld cbar__artist"><label for="c-artist">Artist</label><select id="c-artist" class="f-in" data-c-artist><option value="">All artists</option><option value="abanindranath-tagore">Abanindranath Tagore (2)</option><option value="gaganendranath-tagore">Gaganendranath Tagore (2)</option><option value="nandalal-bose">Nandalal Bose (30)</option><option value="ramkinkar-baij">Ramkinkar Baij (16)</option><option value="j-p-gangooly">J. P. Gangooly (1)</option><option value="sarada-charan-ukil">Sarada Charan Ukil (1)</option><option value="hemen-mazumdar">Hemen Mazumdar (1)</option><option value="maninder-gupta">Maninder Gupta (1)</option><option value="atul-bose">Atul Bose (1)</option><option value="d-p-roy-chowdhury">D. P. Roy Chowdhury (2)</option><option value="gopal-ghose">Gopal Ghose (2)</option><option value="zainul-abedin">Zainul Abedin (2)</option><option value="chittaprosad">Chittaprosad (1)</option><option value="indra-dugar">Indra Dugar (11)</option><option value="biren-de">Biren De (1)</option><option value="m-v-dhurandhar">M. V. Dhurandhar (2)</option><option value="m-k-parandekar">M. K. Parandekar (1)</option><option value="ambika-dhurandhar">Ambika Dhurandhar (1)</option><option value="madhav-satwalkar">Madhav Satwalekar (4)</option><option value="a-a-almelkar">A. A. Almelkar (1)</option><option value="amarnath-sehgal">Amarnath Sehgal (4)</option><option value="nasreen-mohamedi">Nasreen Mohamedi (1)</option><option value="thota-vaikuntam">Thota Vaikuntam (1)</option><option value="dutch-bengal-school">Dutch Bengal School (1)</option><option value="satyendranath-banerjee">Satyendranath Banerjee (1)</option><option value="somendranath-ghosh">Somendranath Ghosh (1)</option></select></div>
+<div class="chips" role="group" aria-label="Kind of work">
+<button type="button" class="chip" data-c-medium="all" aria-pressed="true">Everything <span class="muted">92</span></button><button type="button" class="chip" data-c-medium="painting" aria-pressed="false">Paintings <span class="muted">42</span></button><button type="button" class="chip" data-c-medium="drawing" aria-pressed="false">Drawings <span class="muted">22</span></button><button type="button" class="chip" data-c-medium="sculpture" aria-pressed="false">Sculpture <span class="muted">5</span></button><button type="button" class="chip" data-c-medium="postcard" aria-pressed="false">Postcards <span class="muted">23</span></button>
 </div>
-<div class="col gap-14 coll-meta"><span class="mk muted">2 works</span><a class="tl" href="artist-abanindranath-tagore.html">About Abanindranath</a></div>
+<p class="small muted cbar__count" data-c-count aria-live="polite">92 works</p>
 </div>
-<div class="grid grid-4" data-reveal-group>
-<a class="work-card" href="work-abanindranath-tagore-woman-at-the-pillar.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.5833"><img class="slot-img" src="assets/img/works/thumb/abanindranath-tagore-woman-at-the-pillar.webp" width="420" height="720" alt="Abanindranath Tagore, Damayanti" loading="lazy" decoding="async" style="height:auto"></span></div>
+<div class="coll-group coll-all col gap-48">
+<div class="grid grid-4" data-c-grid>
+<a class="work-card" href="work-abanindranath-tagore-woman-at-the-pillar.html" data-artist="abanindranath-tagore" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.5839"><img class="slot-img" src="assets/img/works/thumb/abanindranath-tagore-woman-at-the-pillar.webp" width="327" height="560" alt="Abanindranath Tagore, Damayanti" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Abanindranath Tagore</span><br><em>Damayanti</em><br><span class="muted">Wash painting</span></span>
 </a>
-<a class="work-card" href="work-abanindranath-tagore-grasses-in-the-wind.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.6036"><img class="slot-img" src="assets/img/works/thumb/abanindranath-tagore-grasses-in-the-wind.webp" width="720" height="449" alt="Abanindranath Tagore, Grasses in the Wind" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-abanindranath-tagore-grasses-in-the-wind.html" data-artist="abanindranath-tagore" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.6046"><img class="slot-img" src="assets/img/works/thumb/abanindranath-tagore-grasses-in-the-wind.webp" width="560" height="349" alt="Abanindranath Tagore, Grasses in the Wind" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Abanindranath Tagore</span><br><em>Grasses in the Wind</em><br><span class="muted">Ink on paper</span></span>
 </a>
-</div>
-</div>
-<div class="coll-group col gap-48" id="gaganendranath-tagore">
-<div class="row-between coll-head">
-<div class="col gap-14 measure">
-<h2 class="h-l">Gaganendranath Tagore <span class="coll-dates">1867–1938</span></h2>
-<p class="muted">Abanindranath&#x27;s elder brother, a painter of mist, light and quiet experiment.</p>
-</div>
-<div class="col gap-14 coll-meta"><span class="mk muted">2 works</span><a class="tl" href="artist-gaganendranath-tagore.html">About Gaganendranath</a></div>
-</div>
-<div class="grid grid-4" data-reveal-group>
-<a class="work-card" href="work-gaganendranath-tagore-santhal-dance.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7458"><img class="slot-img" src="assets/img/works/thumb/gaganendranath-tagore-santhal-dance.webp" width="537" height="720" alt="Gaganendranath Tagore, Santhal Dance" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-gaganendranath-tagore-santhal-dance.html" data-artist="gaganendranath-tagore" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7464"><img class="slot-img" src="assets/img/works/thumb/gaganendranath-tagore-santhal-dance.webp" width="418" height="560" alt="Gaganendranath Tagore, Santhal Dance" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Gaganendranath Tagore</span><br><em>Santhal Dance</em><br><span class="muted">Watercolour</span></span>
 </a>
-<a class="work-card" href="work-gaganendranath-tagore-mountain-study.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.1410"><img class="slot-img" src="assets/img/works/thumb/gaganendranath-tagore-mountain-study.webp" width="720" height="631" alt="Gaganendranath Tagore, Mountain Study" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-gaganendranath-tagore-mountain-study.html" data-artist="gaganendranath-tagore" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.1405"><img class="slot-img" src="assets/img/works/thumb/gaganendranath-tagore-mountain-study.webp" width="560" height="491" alt="Gaganendranath Tagore, Mountain Study" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Gaganendranath Tagore</span><br><em>Mountain Study</em><br><span class="muted">Watercolour on gilded paper</span></span>
 </a>
-</div>
-</div>
-<div class="coll-group col gap-48" id="nandalal-bose">
-<div class="row-between coll-head">
-<div class="col gap-14 measure">
-<h2 class="h-l">Nandalal Bose <span class="coll-dates">1882–1966</span></h2>
-<p class="muted">Abanindranath&#x27;s student, who came to lead Kala Bhavana at Santiniketan. Finished paintings, the studies behind them, and his work in design.</p>
-</div>
-<div class="col gap-14 coll-meta"><span class="mk muted">16 works</span><a class="tl" href="nandalal-bose.html">About Nandalal</a></div>
-</div>
-<div class="grid grid-4" data-reveal-group>
-<a class="work-card" href="work-nandalal-bose-krishna-and-arjuna.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.5190"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-krishna-and-arjuna.webp" width="720" height="474" alt="Nandalal Bose, Krishna and Arjuna" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-nandalal-bose-krishna-and-arjuna.html" data-artist="nandalal-bose" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.5176"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-krishna-and-arjuna.webp" width="560" height="369" alt="Nandalal Bose, Krishna and Arjuna" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Nandalal Bose</span><br><em>Krishna and Arjuna</em><br><span class="muted">Watercolour on paper</span></span>
 </a>
-<a class="work-card" href="work-nandalal-bose-krishna-and-arjuna-first-study.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.5031"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-krishna-and-arjuna-first-study.webp" width="720" height="479" alt="Nandalal Bose, Krishna and Arjuna, First Study" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-nandalal-bose-durga.html" data-artist="nandalal-bose" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6607"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-durga.webp" width="370" height="560" alt="Nandalal Bose, Durga, 1949" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Durga</em><br><span class="muted">Ink and watercolour on paper</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-floral-medallion.html" data-artist="nandalal-bose" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.1740"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-floral-medallion.webp" width="560" height="477" alt="Nandalal Bose, Floral Medallion" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Floral Medallion</em><br><span class="muted">Tempera on board</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-krishna-with-the-herd.html" data-artist="nandalal-bose" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:2.7184"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-krishna-with-the-herd.webp" width="560" height="206" alt="Nandalal Bose, Krishna with the Herd" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Krishna with the Herd</em><br><span class="muted">Watercolour</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-lilies.html" data-artist="nandalal-bose" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6679"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-lilies.webp" width="374" height="560" alt="Nandalal Bose, Lilies" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Lilies</em><br><span class="muted">Watercolour on paper</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-ornamental-panel.html" data-artist="nandalal-bose" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.3302"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-ornamental-panel.webp" width="560" height="421" alt="Nandalal Bose, Ornamental Panel" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Ornamental Panel</em><br><span class="muted">Tempera on silk</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-paisley-study.html" data-artist="nandalal-bose" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6375"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-paisley-study.webp" width="357" height="560" alt="Nandalal Bose, Paisley Study" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Paisley Study</em><br><span class="muted">Tempera on silk, laid on paper</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-procession-to-the-shrine.html" data-artist="nandalal-bose" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:2.7053"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-procession-to-the-shrine.webp" width="560" height="207" alt="Nandalal Bose, Procession to the Shrine" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Procession to the Shrine</em><br><span class="muted">Watercolour on paper</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-shiva.html" data-artist="nandalal-bose" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.5768"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-shiva.webp" width="323" height="560" alt="Nandalal Bose, Shiva" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Shiva</em><br><span class="muted">Wash painting</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-the-buddha-in-the-grove.html" data-artist="nandalal-bose" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:2.3140"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-the-buddha-in-the-grove.webp" width="560" height="242" alt="Nandalal Bose, The Buddha in the Grove" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>The Buddha in the Grove</em><br><span class="muted">Ink and watercolour</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-tree-and-clouds.html" data-artist="nandalal-bose" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.4179"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-tree-and-clouds.webp" width="234" height="560" alt="Nandalal Bose, Tree and Clouds" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Tree and Clouds</em><br><span class="muted">Mixed media on paper</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-krishna-and-arjuna-first-study.html" data-artist="nandalal-bose" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.5013"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-krishna-and-arjuna-first-study.webp" width="560" height="373" alt="Nandalal Bose, Krishna and Arjuna, First Study" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Nandalal Bose</span><br><em>Krishna and Arjuna, First Study</em><br><span class="muted">Pencil on paper</span></span>
 </a>
-<a class="work-card" href="work-nandalal-bose-krishna-and-arjuna-second-study.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2743"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-krishna-and-arjuna-second-study.webp" width="720" height="565" alt="Nandalal Bose, Krishna and Arjuna, Second Study" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-nandalal-bose-krishna-and-arjuna-second-study.html" data-artist="nandalal-bose" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2756"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-krishna-and-arjuna-second-study.webp" width="560" height="439" alt="Nandalal Bose, Krishna and Arjuna, Second Study" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Nandalal Bose</span><br><em>Krishna and Arjuna, Second Study</em><br><span class="muted">Pencil on paper</span></span>
 </a>
-<a class="work-card more-card" href="nandalal-bose.html#in-the-house">
-<div class="mat--chalk"><span class="slot-wrap"><span class="more-card__n">+13</span></span></div>
-<span class="label"><span class="who">See all 16 works</span><br><span class="muted">by Nandalal, on his page</span></span>
+<a class="work-card" href="work-nandalal-bose-fish.html" data-artist="nandalal-bose" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.3592"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-fish.webp" width="560" height="412" alt="Nandalal Bose, Fish" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Fish</em><br><span class="muted">Ink on paper</span></span>
 </a>
-</div>
-</div>
-<div class="coll-group col gap-48" id="ramkinkar-baij">
-<div class="row-between coll-head">
-<div class="col gap-14 measure">
-<h2 class="h-l">Ramkinkar Baij <span class="coll-dates">1906–1980</span></h2>
-<p class="muted">Sculptor first, painter always. Oils, pastels and drawings of the people and the land around Santiniketan.</p>
-</div>
-<div class="col gap-14 coll-meta"><span class="mk muted">16 works</span><a class="tl" href="artist-ramkinkar-baij.html">About Ramkinkar</a></div>
-</div>
-<div class="grid grid-4" data-reveal-group>
-<a class="work-card" href="work-ramkinkar-baij-figures-with-a-fan.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.7561"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-figures-with-a-fan.webp" width="720" height="410" alt="Ramkinkar Baij, Figures with a Fan" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-nandalal-bose-procession-squared-study.html" data-artist="nandalal-bose" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:2.4779"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-procession-squared-study.webp" width="560" height="226" alt="Nandalal Bose, Procession, Squared Study" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Procession, Squared Study</em><br><span class="muted">Pencil on paper</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-six-vignettes.html" data-artist="nandalal-bose" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7536"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-six-vignettes.webp" width="422" height="560" alt="Nandalal Bose, Six Vignettes, 1938" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Six Vignettes</em><br><span class="muted">Ink on paper (set of six)</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-01-cliff-and-pines.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6607"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-01-cliff-and-pines.webp" width="370" height="560" alt="Nandalal Bose, Cliff and Pines" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Cliff and Pines</em><br><span class="muted">Postcard 01 of 14</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-02-man-with-a-pole.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7232"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-02-man-with-a-pole.webp" width="405" height="560" alt="Nandalal Bose, Man with a Pole" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Man with a Pole</em><br><span class="muted">Postcard 02 of 14</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-03-under-the-palms.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6732"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-03-under-the-palms.webp" width="377" height="560" alt="Nandalal Bose, Under the Palms" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Under the Palms</em><br><span class="muted">Postcard 03 of 14</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-04-seated-woman.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.5642"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-04-seated-woman.webp" width="560" height="358" alt="Nandalal Bose, Seated Woman" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Seated Woman</em><br><span class="muted">Postcard 04 of 14</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-05-evening-sky.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.6046"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-05-evening-sky.webp" width="560" height="349" alt="Nandalal Bose, Evening Sky" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Evening Sky</em><br><span class="muted">Postcard 05 of 14</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-06-bamboo.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6589"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-06-bamboo.webp" width="369" height="560" alt="Nandalal Bose, Bamboo" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Bamboo</em><br><span class="muted">Postcard 06 of 14</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-07-mother-and-child.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6768"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-07-mother-and-child.webp" width="379" height="560" alt="Nandalal Bose, Mother and Child" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Mother and Child</em><br><span class="muted">Postcard 07 of 14</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-08-forest-clearing.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6643"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-08-forest-clearing.webp" width="372" height="560" alt="Nandalal Bose, Forest Clearing" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Forest Clearing</em><br><span class="muted">Postcard 08 of 14</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-09-children-at-play.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.3725"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-09-children-at-play.webp" width="560" height="408" alt="Nandalal Bose, Children at Play" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Children at Play</em><br><span class="muted">Postcard 09 of 14</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-10-afternoon-sleep.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.5909"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-10-afternoon-sleep.webp" width="560" height="352" alt="Nandalal Bose, Afternoon Sleep" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Afternoon Sleep</em><br><span class="muted">Postcard 10 of 14</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-11-the-bather.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7089"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-11-the-bather.webp" width="397" height="560" alt="Nandalal Bose, The Bather" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>The Bather</em><br><span class="muted">Postcard 11 of 14</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-12-two-trees-on-a-hill.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6857"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-12-two-trees-on-a-hill.webp" width="384" height="560" alt="Nandalal Bose, Two Trees on a Hill" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Two Trees on a Hill</em><br><span class="muted">Postcard 12 of 14</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-13-cowherd.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6714"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-13-cowherd.webp" width="376" height="560" alt="Nandalal Bose, Cowherd" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>Cowherd</em><br><span class="muted">Postcard 13 of 14</span></span>
+</a>
+<a class="work-card" href="work-nandalal-bose-postcard-14-the-village-path.html" data-artist="nandalal-bose" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6839"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-14-the-village-path.webp" width="383" height="560" alt="Nandalal Bose, The Village Path" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nandalal Bose</span><br><em>The Village Path</em><br><span class="muted">Postcard 14 of 14</span></span>
+</a>
+<a class="work-card" href="work-ramkinkar-baij-figures-with-a-fan.html" data-artist="ramkinkar-baij" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.7555"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-figures-with-a-fan.webp" width="560" height="319" alt="Ramkinkar Baij, Figures with a Fan" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Ramkinkar Baij</span><br><em>Figures with a Fan</em><br><span class="muted">Mixed media on paper</span></span>
 </a>
-<a class="work-card" href="work-ramkinkar-baij-the-tree.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.9222"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-the-tree.webp" width="664" height="720" alt="Ramkinkar Baij, The Tree, 1956" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Ramkinkar Baij</span><br><em>The Tree</em>, 1956<br><span class="muted">Oil on board</span></span>
+<a class="work-card" href="work-ramkinkar-baij-the-tree.html" data-artist="ramkinkar-baij" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.9214"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-the-tree.webp" width="516" height="560" alt="Ramkinkar Baij, The Tree, 1956" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>The Tree</em><br><span class="muted">Oil on board</span></span>
 </a>
-<a class="work-card" href="work-ramkinkar-baij-woman-with-a-flower.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6458"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-woman-with-a-flower.webp" width="465" height="720" alt="Ramkinkar Baij, Woman with a Flower" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-ramkinkar-baij-harvest.html" data-artist="ramkinkar-baij" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6214"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-harvest.webp" width="348" height="560" alt="Ramkinkar Baij, Harvest, 1963" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>Harvest</em><br><span class="muted">Mixed media on paper</span></span>
+</a>
+<a class="work-card" href="work-ramkinkar-baij-mountain-road.html" data-artist="ramkinkar-baij" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.8125"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-mountain-road.webp" width="455" height="560" alt="Ramkinkar Baij, Mountain Road" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>Mountain Road</em><br><span class="muted">Watercolour on paper</span></span>
+</a>
+<a class="work-card" href="work-ramkinkar-baij-on-the-riverbank.html" data-artist="ramkinkar-baij" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.4213"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-on-the-riverbank.webp" width="560" height="394" alt="Ramkinkar Baij, On the Riverbank" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>On the Riverbank</em><br><span class="muted">Watercolour on paper</span></span>
+</a>
+<a class="work-card" href="work-ramkinkar-baij-three-figures.html" data-artist="ramkinkar-baij" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.6232"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-three-figures.webp" width="560" height="345" alt="Ramkinkar Baij, Three Figures" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>Three Figures</em><br><span class="muted">Watercolour on paper</span></span>
+</a>
+<a class="work-card" href="work-ramkinkar-baij-woman-with-a-flower.html" data-artist="ramkinkar-baij" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6464"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-woman-with-a-flower.webp" width="362" height="560" alt="Ramkinkar Baij, Woman with a Flower" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Ramkinkar Baij</span><br><em>Woman with a Flower</em><br><span class="muted">Mixed media (dry pastel) on paper</span></span>
 </a>
-<a class="work-card more-card" href="artist-ramkinkar-baij.html#in-the-house">
-<div class="mat--chalk"><span class="slot-wrap"><span class="more-card__n">+13</span></span></div>
-<span class="label"><span class="who">See all 16 works</span><br><span class="muted">by Ramkinkar, on his page</span></span>
+<a class="work-card" href="work-ramkinkar-baij-bullock-cart.html" data-artist="ramkinkar-baij" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.5954"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-bullock-cart.webp" width="560" height="351" alt="Ramkinkar Baij, Bullock Cart" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>Bullock Cart</em><br><span class="muted">Ink on paper</span></span>
 </a>
-</div>
-</div>
-<div class="coll-group col gap-48" id="circle">
-<div class="row-between coll-head">
-<div class="col gap-14 measure">
-<h2 class="h-l">Their circle and their contemporaries</h2>
-<p class="muted">Pupils of the Bengal School, the painters of Calcutta and Bombay who worked alongside it, and the moderns who came after.</p>
-<p class="small coll-artists">Meet the artists: <a href="artist-sarada-charan-ukil.html">Sarada Charan Ukil</a>, <a href="artist-maninder-gupta.html">Maninder Gupta</a>, <a href="artist-indra-dugar.html">Indra Dugar</a>, <a href="artist-hemen-mazumdar.html">Hemen Mazumdar</a>, <a href="artist-atul-bose.html">Atul Bose</a>, <a href="artist-j-p-gangooly.html">J. P. Gangooly</a>, <a href="artist-d-p-roy-chowdhury.html">D. P. Roy Chowdhury</a>, <a href="artist-m-v-dhurandhar.html">M. V. Dhurandhar</a>, <a href="artist-ambika-dhurandhar.html">Ambika Dhurandhar</a>, <a href="artist-m-k-parandekar.html">M. K. Parandekar</a>, <a href="artist-madhav-satwalkar.html">Madhav Satwalekar</a>, <a href="artist-zainul-abedin.html">Zainul Abedin</a>, <a href="artist-chittaprosad.html">Chittaprosad</a>, <a href="artist-gopal-ghose.html">Gopal Ghose</a>, <a href="artist-biren-de.html">Biren De</a>, <a href="artist-nasreen-mohamedi.html">Nasreen Mohamedi</a>.</p>
-</div>
-<div class="col gap-14 coll-meta"><span class="mk muted">36 works</span></div>
-</div>
-<div class="grid grid-4" data-reveal-group>
-<a class="work-card" href="work-sarada-charan-ukil-vultures.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.4090"><img class="slot-img" src="assets/img/works/thumb/sarada-charan-ukil-vultures.webp" width="720" height="511" alt="Sarada Charan Ukil, Vultures" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-ramkinkar-baij-drawing-water.html" data-artist="ramkinkar-baij" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.5964"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-drawing-water.webp" width="334" height="560" alt="Ramkinkar Baij, Drawing Water" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>Drawing Water</em><br><span class="muted">Dry pastel on paper</span></span>
+</a>
+<a class="work-card" href="work-ramkinkar-baij-figure-in-motion.html" data-artist="ramkinkar-baij" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6607"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-figure-in-motion.webp" width="370" height="560" alt="Ramkinkar Baij, Figure in Motion" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>Figure in Motion</em><br><span class="muted">Pencil on paper</span></span>
+</a>
+<a class="work-card" href="work-ramkinkar-baij-gatherers.html" data-artist="ramkinkar-baij" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7679"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-gatherers.webp" width="430" height="560" alt="Ramkinkar Baij, Gatherers" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>Gatherers</em><br><span class="muted">Pencil on paper</span></span>
+</a>
+<a class="work-card" href="work-ramkinkar-baij-mother-and-child.html" data-artist="ramkinkar-baij" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.5804"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-mother-and-child.webp" width="325" height="560" alt="Ramkinkar Baij, Mother and Child" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>Mother and Child</em><br><span class="muted">Dry pastel on paper</span></span>
+</a>
+<a class="work-card" href="work-ramkinkar-baij-rooster-with-chicks.html" data-artist="ramkinkar-baij" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.5893"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-rooster-with-chicks.webp" width="330" height="560" alt="Ramkinkar Baij, Rooster with Chicks" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>Rooster with Chicks</em><br><span class="muted">Dry pastel on paper</span></span>
+</a>
+<a class="work-card" href="work-ramkinkar-baij-study-for-a-sculpture.html" data-artist="ramkinkar-baij" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7339"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-study-for-a-sculpture.webp" width="411" height="560" alt="Ramkinkar Baij, Study for a Sculpture" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>Study for a Sculpture</em><br><span class="muted">Pencil on paper</span></span>
+</a>
+<a class="work-card" href="work-ramkinkar-baij-the-couple.html" data-artist="ramkinkar-baij" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.5750"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-the-couple.webp" width="322" height="560" alt="Ramkinkar Baij, The Couple" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>The Couple</em><br><span class="muted">Dry pastel on paper</span></span>
+</a>
+<a class="work-card" href="work-ramkinkar-baij-woman-by-a-tree.html" data-artist="ramkinkar-baij" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6161"><img class="slot-img" src="assets/img/works/thumb/ramkinkar-baij-woman-by-a-tree.webp" width="345" height="560" alt="Ramkinkar Baij, Woman by a Tree" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ramkinkar Baij</span><br><em>Woman by a Tree</em><br><span class="muted">Dry pastel on paper</span></span>
+</a>
+<a class="work-card" href="work-j-p-gangooly-sunset-over-the-river.html" data-artist="j-p-gangooly" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.4545"><img class="slot-img" src="assets/img/works/thumb/j-p-gangooly-sunset-over-the-river.webp" width="560" height="385" alt="J. P. Gangooly, Sunset over the River" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">J. P. Gangooly</span><br><em>Sunset over the River</em><br><span class="muted">Oil on canvas pasted on board</span></span>
+</a>
+<a class="work-card" href="work-sarada-charan-ukil-vultures.html" data-artist="sarada-charan-ukil" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.4070"><img class="slot-img" src="assets/img/works/thumb/sarada-charan-ukil-vultures.webp" width="560" height="398" alt="Sarada Charan Ukil, Vultures" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Sarada Charan Ukil</span><br><em>Vultures</em><br><span class="muted">Ink and watercolour on paper</span></span>
 </a>
-<a class="work-card" href="work-maninder-gupta-the-vina-player.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6536"><img class="slot-img" src="assets/img/works/thumb/maninder-gupta-the-vina-player.webp" width="468" height="716" alt="Maninder Gupta, The Vina Player, 1933" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Maninder Gupta</span><br><em>The Vina Player</em>, 1933<br><span class="muted">Gouache on paper</span></span>
+<a class="work-card" href="work-hemen-mazumdar-the-ascetic.html" data-artist="hemen-mazumdar" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2095"><img class="slot-img" src="assets/img/works/thumb/hemen-mazumdar-the-ascetic.webp" width="560" height="463" alt="Hemen Mazumdar, The Ascetic, 1926" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Hemen Mazumdar</span><br><em>The Ascetic</em><br><span class="muted">Mixed media on paper</span></span>
 </a>
-<a class="work-card" href="work-indra-dugar-riverside-cottages.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2121"><img class="slot-img" src="assets/img/works/thumb/indra-dugar-riverside-cottages.webp" width="720" height="594" alt="Indra Dugar, Riverside Cottages" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-maninder-gupta-the-vina-player.html" data-artist="maninder-gupta" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6536"><img class="slot-img" src="assets/img/works/thumb/maninder-gupta-the-vina-player.webp" width="366" height="560" alt="Maninder Gupta, The Vina Player, 1933" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Maninder Gupta</span><br><em>The Vina Player</em><br><span class="muted">Gouache on paper</span></span>
+</a>
+<a class="work-card" href="work-atul-bose-portrait-of-a-young-woman.html" data-artist="atul-bose" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7339"><img class="slot-img" src="assets/img/works/thumb/atul-bose-portrait-of-a-young-woman.webp" width="411" height="560" alt="Atul Bose, Portrait of a Young Woman" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Atul Bose</span><br><em>Portrait of a Young Woman</em><br><span class="muted">Pastel on paper</span></span>
+</a>
+<a class="work-card" href="work-d-p-roy-chowdhury-rain-on-the-avenue.html" data-artist="d-p-roy-chowdhury" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7036"><img class="slot-img" src="assets/img/works/thumb/d-p-roy-chowdhury-rain-on-the-avenue.webp" width="394" height="560" alt="D. P. Roy Chowdhury, Rain on the Avenue" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">D. P. Roy Chowdhury</span><br><em>Rain on the Avenue</em><br><span class="muted">Watercolour on paper</span></span>
+</a>
+<a class="work-card" href="work-d-p-roy-chowdhury-among-the-lilies.html" data-artist="d-p-roy-chowdhury" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.4660"><img class="slot-img" src="assets/img/works/thumb/d-p-roy-chowdhury-among-the-lilies.webp" width="560" height="382" alt="D. P. Roy Chowdhury, Among the Lilies" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">D. P. Roy Chowdhury</span><br><em>Among the Lilies</em><br><span class="muted">Watercolour on paper</span></span>
+</a>
+<a class="work-card" href="work-gopal-ghose-the-swing.html" data-artist="gopal-ghose" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.8161"><img class="slot-img" src="assets/img/works/thumb/gopal-ghose-the-swing.webp" width="457" height="560" alt="Gopal Ghose, The Swing" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Gopal Ghose</span><br><em>The Swing</em><br><span class="muted">Oil on canvas</span></span>
+</a>
+<a class="work-card" href="work-gopal-ghose-white-bird.html" data-artist="gopal-ghose" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6482"><img class="slot-img" src="assets/img/works/thumb/gopal-ghose-white-bird.webp" width="363" height="560" alt="Gopal Ghose, White Bird, 1959" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Gopal Ghose</span><br><em>White Bird</em><br><span class="muted">Pastel on paper</span></span>
+</a>
+<a class="work-card" href="work-zainul-abedin-crows.html" data-artist="zainul-abedin" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.4286"><img class="slot-img" src="assets/img/works/thumb/zainul-abedin-crows.webp" width="560" height="392" alt="Zainul Abedin, Crows" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Zainul Abedin</span><br><em>Crows</em><br><span class="muted">Watercolour</span></span>
+</a>
+<a class="work-card" href="work-zainul-abedin-boats-at-dusk.html" data-artist="zainul-abedin" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:4.0876"><img class="slot-img" src="assets/img/works/thumb/zainul-abedin-boats-at-dusk.webp" width="560" height="137" alt="Zainul Abedin, Boats at Dusk, 1943" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Zainul Abedin</span><br><em>Boats at Dusk</em><br><span class="muted">Watercolour on paper</span></span>
+</a>
+<a class="work-card" href="work-chittaprosad-the-overthrow.html" data-artist="chittaprosad" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.8500"><img class="slot-img" src="assets/img/works/thumb/chittaprosad-the-overthrow.webp" width="476" height="560" alt="Chittaprosad, The Overthrow" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Chittaprosad</span><br><em>The Overthrow</em><br><span class="muted">Ink on paper</span></span>
+</a>
+<a class="work-card" href="work-indra-dugar-riverside-cottages.html" data-artist="indra-dugar" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2121"><img class="slot-img" src="assets/img/works/thumb/indra-dugar-riverside-cottages.webp" width="560" height="462" alt="Indra Dugar, Riverside Cottages" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Indra Dugar</span><br><em>Riverside Cottages</em><br><span class="muted">Gouache on paper</span></span>
 </a>
-<a class="work-card" href="work-indra-dugar-himalayan-evening.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2371"><img class="slot-img" src="assets/img/works/thumb/indra-dugar-himalayan-evening.webp" width="720" height="582" alt="Indra Dugar, Himalayan Evening" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-indra-dugar-himalayan-evening.html" data-artist="indra-dugar" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2389"><img class="slot-img" src="assets/img/works/thumb/indra-dugar-himalayan-evening.webp" width="560" height="452" alt="Indra Dugar, Himalayan Evening" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Indra Dugar</span><br><em>Himalayan Evening</em><br><span class="muted">Tempera on cardboard</span></span>
 </a>
-<a class="work-card" href="work-indra-dugar-the-river-through-the-valley.html">
+<a class="work-card" href="work-indra-dugar-the-river-through-the-valley.html" data-artist="indra-dugar" data-medium="postcard">
 <div class="mat--chalk"><span class="slot-wrap" style="--r:1.6617"><img class="slot-img" src="assets/img/works/thumb/indra-dugar-the-river-through-the-valley.webp" width="560" height="337" alt="Indra Dugar, Untitled: a river looping across a wide valley" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Indra Dugar</span><br><em>Untitled</em><br><span class="muted">Watercolour postcard</span></span>
 </a>
-<a class="work-card more-card" href="artist-indra-dugar.html#in-the-house">
-<div class="mat--chalk"><span class="slot-wrap"><span class="more-card__n">+8</span></span></div>
-<span class="label"><span class="who">See all 11 works</span><br><span class="muted">by Dugar, on his page</span></span>
+<a class="work-card" href="work-indra-dugar-autumn-in-the-mountains.html" data-artist="indra-dugar" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.6374"><img class="slot-img" src="assets/img/works/thumb/indra-dugar-autumn-in-the-mountains.webp" width="560" height="342" alt="Indra Dugar, Untitled: a snow peak above an autumn valley" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Indra Dugar</span><br><em>Untitled</em><br><span class="muted">Watercolour postcard</span></span>
 </a>
-<a class="work-card" href="work-hemen-mazumdar-the-ascetic.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2101"><img class="slot-img" src="assets/img/works/thumb/hemen-mazumdar-the-ascetic.webp" width="720" height="595" alt="Hemen Mazumdar, The Ascetic, 1926" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Hemen Mazumdar</span><br><em>The Ascetic</em>, 1926<br><span class="muted">Mixed media on paper</span></span>
+<a class="work-card" href="work-indra-dugar-flags-above-the-river.html" data-artist="indra-dugar" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.5094"><img class="slot-img" src="assets/img/works/thumb/indra-dugar-flags-above-the-river.webp" width="560" height="371" alt="Indra Dugar, Untitled: pennants on a hill above a river" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Indra Dugar</span><br><em>Untitled</em><br><span class="muted">Watercolour postcard</span></span>
 </a>
-<a class="work-card" href="work-atul-bose-portrait-of-a-young-woman.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7333"><img class="slot-img" src="assets/img/works/thumb/atul-bose-portrait-of-a-young-woman.webp" width="528" height="720" alt="Atul Bose, Portrait of a Young Woman" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Atul Bose</span><br><em>Portrait of a Young Woman</em><br><span class="muted">Pastel on paper</span></span>
+<a class="work-card" href="work-indra-dugar-homeward-across-the-fields.html" data-artist="indra-dugar" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.6232"><img class="slot-img" src="assets/img/works/thumb/indra-dugar-homeward-across-the-fields.webp" width="560" height="345" alt="Indra Dugar, Untitled: two women crossing ochre fields" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Indra Dugar</span><br><em>Untitled</em><br><span class="muted">Watercolour postcard</span></span>
 </a>
-<a class="work-card" href="work-j-p-gangooly-sunset-over-the-river.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.4545"><img class="slot-img" src="assets/img/works/thumb/j-p-gangooly-sunset-over-the-river.webp" width="720" height="495" alt="J. P. Gangooly, Sunset over the River" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">J. P. Gangooly</span><br><em>Sunset over the River</em><br><span class="muted">Oil on canvas pasted on board</span></span>
+<a class="work-card" href="work-indra-dugar-lotus-and-leaves.html" data-artist="indra-dugar" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.7834"><img class="slot-img" src="assets/img/works/thumb/indra-dugar-lotus-and-leaves.webp" width="560" height="314" alt="Indra Dugar, Untitled: lotus leaves and white blooms" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Indra Dugar</span><br><em>Untitled</em><br><span class="muted">Watercolour postcard</span></span>
 </a>
-<a class="work-card" href="work-d-p-roy-chowdhury-rain-on-the-avenue.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7043"><img class="slot-img" src="assets/img/works/thumb/d-p-roy-chowdhury-rain-on-the-avenue.webp" width="505" height="717" alt="D. P. Roy Chowdhury, Rain on the Avenue" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">D. P. Roy Chowdhury</span><br><em>Rain on the Avenue</em><br><span class="muted">Watercolour on paper</span></span>
+<a class="work-card" href="work-indra-dugar-sails-on-the-river.html" data-artist="indra-dugar" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.4660"><img class="slot-img" src="assets/img/works/thumb/indra-dugar-sails-on-the-river.webp" width="560" height="382" alt="Indra Dugar, Untitled: a boat under a red sail on a golden river" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Indra Dugar</span><br><em>Untitled</em><br><span class="muted">Watercolour postcard</span></span>
 </a>
-<a class="work-card" href="work-d-p-roy-chowdhury-among-the-lilies.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.4664"><img class="slot-img" src="assets/img/works/thumb/d-p-roy-chowdhury-among-the-lilies.webp" width="720" height="491" alt="D. P. Roy Chowdhury, Among the Lilies" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">D. P. Roy Chowdhury</span><br><em>Among the Lilies</em><br><span class="muted">Watercolour on paper</span></span>
+<a class="work-card" href="work-indra-dugar-temple-by-the-sea.html" data-artist="indra-dugar" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.3592"><img class="slot-img" src="assets/img/works/thumb/indra-dugar-temple-by-the-sea.webp" width="560" height="412" alt="Indra Dugar, Untitled: temple towers at the end of a beach" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Indra Dugar</span><br><em>Untitled</em><br><span class="muted">Watercolour postcard</span></span>
 </a>
-<a class="work-card" href="work-m-v-dhurandhar-portrait-of-a-woman.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7208"><img class="slot-img" src="assets/img/works/thumb/m-v-dhurandhar-portrait-of-a-woman.webp" width="519" height="720" alt="M. V. Dhurandhar, Portrait of a Woman" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-indra-dugar-village-by-the-pond.html" data-artist="indra-dugar" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.3793"><img class="slot-img" src="assets/img/works/thumb/indra-dugar-village-by-the-pond.webp" width="560" height="406" alt="Indra Dugar, Untitled: a village with palms beside a pond" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Indra Dugar</span><br><em>Untitled</em><br><span class="muted">Watercolour postcard</span></span>
+</a>
+<a class="work-card" href="work-indra-dugar-woman-resting-under-a-tree.html" data-artist="indra-dugar" data-medium="postcard">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.3826"><img class="slot-img" src="assets/img/works/thumb/indra-dugar-woman-resting-under-a-tree.webp" width="524" height="379" alt="Indra Dugar, Untitled: a woman in a red shawl resting under a tree" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Indra Dugar</span><br><em>Untitled</em><br><span class="muted">Watercolour postcard</span></span>
+</a>
+<a class="work-card" href="work-biren-de-simla-in-snow.html" data-artist="biren-de" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7911"><img class="slot-img" src="assets/img/works/thumb/biren-de-simla-in-snow.webp" width="443" height="560" alt="Biren De, Simla in Snow, 1945" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Biren De</span><br><em>Simla in Snow</em><br><span class="muted">Watercolour on paper</span></span>
+</a>
+<a class="work-card" href="work-m-v-dhurandhar-on-the-swing.html" data-artist="m-v-dhurandhar" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7286"><img class="slot-img" src="assets/img/works/thumb/m-v-dhurandhar-on-the-swing.webp" width="408" height="560" alt="M. V. Dhurandhar, On the Swing, 1921" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">M. V. Dhurandhar</span><br><em>On the Swing</em><br><span class="muted">Pencil, charcoal and watercolour on paper</span></span>
+</a>
+<a class="work-card" href="work-m-v-dhurandhar-portrait-of-a-woman.html" data-artist="m-v-dhurandhar" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7214"><img class="slot-img" src="assets/img/works/thumb/m-v-dhurandhar-portrait-of-a-woman.webp" width="404" height="560" alt="M. V. Dhurandhar, Portrait of a Woman" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">M. V. Dhurandhar</span><br><em>Portrait of a Woman</em><br><span class="muted">Charcoal and pencil</span></span>
 </a>
-<a class="work-card" href="work-m-v-dhurandhar-on-the-swing.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7278"><img class="slot-img" src="assets/img/works/thumb/m-v-dhurandhar-on-the-swing.webp" width="524" height="720" alt="M. V. Dhurandhar, On the Swing, 1921" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">M. V. Dhurandhar</span><br><em>On the Swing</em>, 1921<br><span class="muted">Pencil, charcoal and watercolour on paper</span></span>
-</a>
-<a class="work-card" href="work-ambika-dhurandhar-the-pavilion.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7639"><img class="slot-img" src="assets/img/works/thumb/ambika-dhurandhar-the-pavilion.webp" width="550" height="720" alt="Ambika Dhurandhar, The Pavilion, 1928" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Ambika Dhurandhar</span><br><em>The Pavilion</em>, 1928<br><span class="muted">Watercolour on paper</span></span>
-</a>
-<a class="work-card" href="work-m-k-parandekar-the-garden-path.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.5778"><img class="slot-img" src="assets/img/works/thumb/m-k-parandekar-the-garden-path.webp" width="416" height="720" alt="M. K. Parandekar, The Garden Path" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-m-k-parandekar-the-garden-path.html" data-artist="m-k-parandekar" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.5786"><img class="slot-img" src="assets/img/works/thumb/m-k-parandekar-the-garden-path.webp" width="324" height="560" alt="M. K. Parandekar, The Garden Path" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">M. K. Parandekar</span><br><em>The Garden Path</em><br><span class="muted">Watercolour on paper</span></span>
 </a>
-<a class="work-card" href="work-madhav-satwalkar-the-riverbank.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.6744"><img class="slot-img" src="assets/img/works/thumb/madhav-satwalkar-the-riverbank.webp" width="720" height="430" alt="Madhav Satwalekar, The Riverbank" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-ambika-dhurandhar-the-pavilion.html" data-artist="ambika-dhurandhar" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7643"><img class="slot-img" src="assets/img/works/thumb/ambika-dhurandhar-the-pavilion.webp" width="428" height="560" alt="Ambika Dhurandhar, The Pavilion, 1928" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Ambika Dhurandhar</span><br><em>The Pavilion</em><br><span class="muted">Watercolour on paper</span></span>
+</a>
+<a class="work-card" href="work-madhav-satwalkar-the-riverbank.html" data-artist="madhav-satwalkar" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.6766"><img class="slot-img" src="assets/img/works/thumb/madhav-satwalkar-the-riverbank.webp" width="560" height="334" alt="Madhav Satwalekar, The Riverbank" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Madhav Satwalekar</span><br><em>The Riverbank</em><br><span class="muted">Oil on canvas</span></span>
 </a>
-<a class="work-card" href="work-madhav-satwalkar-the-hay-cart.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.3163"><img class="slot-img" src="assets/img/works/thumb/madhav-satwalkar-the-hay-cart.webp" width="720" height="547" alt="Madhav Satwalekar, The Hay Cart" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-madhav-satwalkar-the-hay-cart.html" data-artist="madhav-satwalkar" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.3176"><img class="slot-img" src="assets/img/works/thumb/madhav-satwalkar-the-hay-cart.webp" width="560" height="425" alt="Madhav Satwalekar, The Hay Cart" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Madhav Satwalekar</span><br><em>The Hay Cart</em><br><span class="muted">Oil on canvas</span></span>
 </a>
-<a class="work-card" href="work-madhav-satwalkar-the-banyan.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2000"><img class="slot-img" src="assets/img/works/thumb/madhav-satwalkar-the-banyan.webp" width="720" height="600" alt="Madhav Satwalekar, The Banyan" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-madhav-satwalkar-the-banyan.html" data-artist="madhav-satwalkar" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.1991"><img class="slot-img" src="assets/img/works/thumb/madhav-satwalkar-the-banyan.webp" width="560" height="467" alt="Madhav Satwalekar, The Banyan" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Madhav Satwalekar</span><br><em>The Banyan</em><br><span class="muted">Oil on canvas</span></span>
 </a>
-<a class="work-card more-card" href="artist-madhav-satwalkar.html#in-the-house">
-<div class="mat--chalk"><span class="slot-wrap"><span class="more-card__n">+1</span></span></div>
-<span class="label"><span class="who">See all 4 works</span><br><span class="muted">by Satwalekar, on his page</span></span>
+<a class="work-card" href="work-madhav-satwalkar-village-lane.html" data-artist="madhav-satwalkar" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.1765"><img class="slot-img" src="assets/img/works/thumb/madhav-satwalkar-village-lane.webp" width="560" height="476" alt="Madhav Satwalekar, Village Lane" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Madhav Satwalekar</span><br><em>Village Lane</em><br><span class="muted">Oil on canvas</span></span>
 </a>
-<a class="work-card" href="work-zainul-abedin-crows.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.4286"><img class="slot-img" src="assets/img/works/thumb/zainul-abedin-crows.webp" width="720" height="504" alt="Zainul Abedin, Crows" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Zainul Abedin</span><br><em>Crows</em><br><span class="muted">Watercolour</span></span>
+<a class="work-card" href="work-a-a-almelkar-divine-love.html" data-artist="a-a-almelkar" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2095"><img class="slot-img" src="assets/img/works/thumb/a-a-almelkar-divine-love.webp" width="560" height="463" alt="A. A. Almelkar, Divine Love, 1976" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">A. A. Almelkar</span><br><em>Divine Love</em><br><span class="muted">Gouache on paper</span></span>
 </a>
-<a class="work-card" href="work-zainul-abedin-boats-at-dusk.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:4.0909"><img class="slot-img" src="assets/img/works/thumb/zainul-abedin-boats-at-dusk.webp" width="720" height="176" alt="Zainul Abedin, Boats at Dusk, 1943" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Zainul Abedin</span><br><em>Boats at Dusk</em>, 1943<br><span class="muted">Watercolour on paper</span></span>
+<a class="work-card" href="work-amarnath-sehgal-untitled-1972.html" data-artist="amarnath-sehgal" data-medium="sculpture">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.0811"><img class="slot-img" src="assets/img/works/thumb/amarnath-sehgal-untitled-1972.webp" width="560" height="518" alt="Amarnath Sehgal, Untitled, 1972" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Amarnath Sehgal</span><br><em>Untitled</em><br><span class="muted">Bronze</span></span>
 </a>
-<a class="work-card" href="work-chittaprosad-the-overthrow.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.8499"><img class="slot-img" src="assets/img/works/thumb/chittaprosad-the-overthrow.webp" width="606" height="713" alt="Chittaprosad, The Overthrow" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Chittaprosad</span><br><em>The Overthrow</em><br><span class="muted">Ink on paper</span></span>
-</a>
-<a class="work-card" href="work-gopal-ghose-the-swing.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.8167"><img class="slot-img" src="assets/img/works/thumb/gopal-ghose-the-swing.webp" width="588" height="720" alt="Gopal Ghose, The Swing" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Gopal Ghose</span><br><em>The Swing</em><br><span class="muted">Oil on canvas</span></span>
-</a>
-<a class="work-card" href="work-gopal-ghose-white-bird.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6486"><img class="slot-img" src="assets/img/works/thumb/gopal-ghose-white-bird.webp" width="467" height="720" alt="Gopal Ghose, White Bird, 1959" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Gopal Ghose</span><br><em>White Bird</em>, 1959<br><span class="muted">Pastel on paper</span></span>
-</a>
-<a class="work-card" href="work-biren-de-simla-in-snow.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7903"><img class="slot-img" src="assets/img/works/thumb/biren-de-simla-in-snow.webp" width="569" height="720" alt="Biren De, Simla in Snow, 1945" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Biren De</span><br><em>Simla in Snow</em>, 1945<br><span class="muted">Watercolour on paper</span></span>
-</a>
-<a class="work-card" href="work-nasreen-mohamedi-untitled.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7083"><img class="slot-img" src="assets/img/works/thumb/nasreen-mohamedi-untitled.webp" width="510" height="720" alt="Nasreen Mohamedi, Untitled" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Nasreen Mohamedi</span><br><em>Untitled</em><br><span class="muted">Ink on paper</span></span>
-</a>
-<a class="work-card" href="work-somendranath-ghosh-steamers-on-the-river.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2414"><img class="slot-img" src="assets/img/works/thumb/somendranath-ghosh-steamers-on-the-river.webp" width="720" height="580" alt="Somendranath Ghosh, Steamers on the River, 1935" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Somendranath Ghosh</span><br><em>Steamers on the River</em>, 1935<br><span class="muted">Pencil on paper</span></span>
-</a>
-<a class="work-card" href="work-dutch-bengal-school-yashoda-and-krishna.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2478"><img class="slot-img" src="assets/img/works/thumb/dutch-bengal-school-yashoda-and-krishna.webp" width="720" height="577" alt="Dutch Bengal School, Yashoda and Krishna" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Dutch Bengal School</span><br><em>Yashoda and Krishna</em><br><span class="muted">Oil on canvas</span></span>
-</a>
-<a class="work-card" href="work-satyendranath-banerjee-women-in-a-courtyard.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7919"><img class="slot-img" src="assets/img/works/thumb/satyendranath-banerjee-women-in-a-courtyard.webp" width="567" height="716" alt="Satyendranath Banerjee, Women in a Courtyard" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Satyendranath Banerjee</span><br><em>Women in a Courtyard</em><br><span class="muted">Gouache and watercolour on paper</span></span>
-</a>
-</div>
-</div>
-<div class="coll-group col gap-48" id="a-a-almelkar">
-<div class="row-between coll-head">
-<div class="col gap-14 measure">
-<h2 class="h-l">A. A. Almelkar <span class="coll-dates">1920–1982</span></h2>
-<p class="muted">A Bombay painter who drew like a miniaturist, bridging the Bengal School and the J. J. School of Art.</p>
-</div>
-<div class="col gap-14 coll-meta"><span class="mk muted">1 work</span><a class="tl" href="artist-a-a-almelkar.html">About Almelkar</a></div>
-</div>
-<div class="grid grid-4" data-reveal-group>
-<a class="work-card" href="work-a-a-almelkar-divine-love.html">
-<div class="mat--chalk "><span class="slot-wrap" style="--r:1.2095"><img class="slot-img" src="assets/img/works/thumb/a-a-almelkar-divine-love.webp" width="560" height="463" alt="A. A. Almelkar, Divine Love, 1976" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">A. A. Almelkar</span><br><em>Divine Love</em>, 1976<br><span class="muted">Gouache on paper</span></span>
-</a>
-</div>
-</div>
-<div class="coll-group col gap-48" id="amarnath-sehgal">
-<div class="row-between coll-head">
-<div class="col gap-14 measure">
-<h2 class="h-l">Amarnath Sehgal <span class="coll-dates">1922–2007</span></h2>
-<p class="muted">A modernist sculptor of Delhi who left his bronzes rough, so the metal keeps the marks of his hands.</p>
-</div>
-<div class="col gap-14 coll-meta"><span class="mk muted">4 works</span><a class="tl" href="artist-amarnath-sehgal.html">About Sehgal</a></div>
-</div>
-<div class="grid grid-4" data-reveal-group>
-<a class="work-card" href="work-amarnath-sehgal-untitled-1972.html">
-<div class="mat--chalk on-white"><span class="slot-wrap" style="--r:1.0811"><img class="slot-img" src="assets/img/works/thumb/amarnath-sehgal-untitled-1972.webp" width="560" height="518" alt="Amarnath Sehgal, Untitled, 1972" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Amarnath Sehgal</span><br><em>Untitled</em>, 1972<br><span class="muted">Bronze</span></span>
-</a>
-<a class="work-card" href="work-amarnath-sehgal-untitled-figure.html">
-<div class="mat--chalk on-white"><span class="slot-wrap" style="--r:1.0409"><img class="slot-img" src="assets/img/works/thumb/amarnath-sehgal-untitled-figure.webp" width="560" height="538" alt="Amarnath Sehgal, Untitled (Figure)" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-amarnath-sehgal-untitled-figure.html" data-artist="amarnath-sehgal" data-medium="sculpture">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.0409"><img class="slot-img" src="assets/img/works/thumb/amarnath-sehgal-untitled-figure.webp" width="560" height="538" alt="Amarnath Sehgal, Untitled (Figure)" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Amarnath Sehgal</span><br><em>Untitled (Figure)</em><br><span class="muted">Bronze on a wooden base</span></span>
 </a>
-<a class="work-card" href="work-amarnath-sehgal-untitled-reclining-forms.html">
-<div class="mat--chalk on-white"><span class="slot-wrap" style="--r:1.5686"><img class="slot-img" src="assets/img/works/thumb/amarnath-sehgal-untitled-reclining-forms.webp" width="560" height="357" alt="Amarnath Sehgal, Untitled (Reclining Forms)" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-amarnath-sehgal-untitled-reclining-forms.html" data-artist="amarnath-sehgal" data-medium="sculpture">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.5686"><img class="slot-img" src="assets/img/works/thumb/amarnath-sehgal-untitled-reclining-forms.webp" width="560" height="357" alt="Amarnath Sehgal, Untitled (Reclining Forms)" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Amarnath Sehgal</span><br><em>Untitled (Reclining Forms)</em><br><span class="muted">Bronze</span></span>
 </a>
-<a class="work-card more-card" href="artist-amarnath-sehgal.html#in-the-house">
-<div class="mat--chalk"><span class="slot-wrap"><span class="more-card__n">+1</span></span></div>
-<span class="label"><span class="who">See all 4 works</span><br><span class="muted">by Sehgal, on his page</span></span>
+<a class="work-card" href="work-amarnath-sehgal-untitled-winged-form.html" data-artist="amarnath-sehgal" data-medium="sculpture">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.4815"><img class="slot-img" src="assets/img/works/thumb/amarnath-sehgal-untitled-winged-form.webp" width="560" height="378" alt="Amarnath Sehgal, Untitled (Winged Form)" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Amarnath Sehgal</span><br><em>Untitled (Winged Form)</em><br><span class="muted">Bronze on a wooden base</span></span>
 </a>
-</div>
-</div>
-<div class="coll-group col gap-48" id="thota-vaikuntam">
-<div class="row-between coll-head">
-<div class="col gap-14 measure">
-<h2 class="h-l">Thota Vaikuntam <span class="coll-dates">b. 1942</span></h2>
-<p class="muted">The painter of Telangana's women, taught at Baroda by K. G. Subramanyan, Nandalal Bose's student.</p>
-</div>
-<div class="col gap-14 coll-meta"><span class="mk muted">1 work</span><a class="tl" href="artist-thota-vaikuntam.html">About Vaikuntam</a></div>
-</div>
-<div class="grid grid-4" data-reveal-group>
-<a class="work-card" href="work-thota-vaikuntam-head-of-a-woman.html">
-<div class="mat--chalk on-white"><span class="slot-wrap" style="--r:0.7821"><img class="slot-img" src="assets/img/works/thumb/thota-vaikuntam-head-of-a-woman.webp" width="438" height="560" alt="Thota Vaikuntam, Untitled (Head of a Woman)" loading="lazy" decoding="async" style="height:auto"></span></div>
+<a class="work-card" href="work-nasreen-mohamedi-untitled.html" data-artist="nasreen-mohamedi" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7089"><img class="slot-img" src="assets/img/works/thumb/nasreen-mohamedi-untitled.webp" width="397" height="560" alt="Nasreen Mohamedi, Untitled" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Nasreen Mohamedi</span><br><em>Untitled</em><br><span class="muted">Ink on paper</span></span>
+</a>
+<a class="work-card" href="work-thota-vaikuntam-head-of-a-woman.html" data-artist="thota-vaikuntam" data-medium="sculpture">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7821"><img class="slot-img" src="assets/img/works/thumb/thota-vaikuntam-head-of-a-woman.webp" width="438" height="560" alt="Thota Vaikuntam, Untitled (Head of a Woman)" loading="lazy" decoding="async" style="height:auto"></span></div>
 <span class="label"><span class="who">Thota Vaikuntam</span><br><em>Untitled (Head of a Woman)</em><br><span class="muted">Painted and patinated bronze</span></span>
 </a>
-</div>
-</div>
-<div class="coll-group col gap-48" id="postcards">
-<div class="row-between coll-head">
-<div class="col gap-14 measure">
-<h2 class="h-l">The postcards of Nandalal Bose</h2>
-<p class="muted">Between the late 1910s and the 1940s, Nandalal Bose turned the humble postcard into a sketchbook. He painted them for friends and fellow artists, often while travelling, in a few strokes of ink or a quick wash of colour. Fourteen of them are gathered here.</p>
-</div>
-<div class="col gap-14 coll-meta"><span class="mk muted">14 works</span></div>
-</div>
-<div class="grid grid-4 grid-pc" data-reveal-group>
-<a class="work-card" href="work-nandalal-bose-postcard-01-cliff-and-pines.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6611"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-01-cliff-and-pines.webp" width="476" height="720" alt="Nandalal Bose, Cliff and Pines" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Nandalal Bose</span><br><em>Cliff and Pines</em><br><span class="muted">Postcard 01</span></span>
+<a class="work-card" href="work-dutch-bengal-school-yashoda-and-krishna.html" data-artist="dutch-bengal-school" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2472"><img class="slot-img" src="assets/img/works/thumb/dutch-bengal-school-yashoda-and-krishna.webp" width="560" height="449" alt="Dutch Bengal School, Yashoda and Krishna" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Dutch Bengal School</span><br><em>Yashoda and Krishna</em><br><span class="muted">Oil on canvas</span></span>
 </a>
-<a class="work-card" href="work-nandalal-bose-postcard-02-man-with-a-pole.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7236"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-02-man-with-a-pole.webp" width="521" height="720" alt="Nandalal Bose, Man with a Pole" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Nandalal Bose</span><br><em>Man with a Pole</em><br><span class="muted">Postcard 02</span></span>
+<a class="work-card" href="work-satyendranath-banerjee-women-in-a-courtyard.html" data-artist="satyendranath-banerjee" data-medium="painting">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:0.7929"><img class="slot-img" src="assets/img/works/thumb/satyendranath-banerjee-women-in-a-courtyard.webp" width="444" height="560" alt="Satyendranath Banerjee, Women in a Courtyard" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Satyendranath Banerjee</span><br><em>Women in a Courtyard</em><br><span class="muted">Gouache and watercolour on paper</span></span>
 </a>
-<a class="work-card" href="work-nandalal-bose-postcard-03-under-the-palms.html">
-<div class="mat--chalk"><span class="slot-wrap" style="--r:0.6736"><img class="slot-img" src="assets/img/works/thumb/nandalal-bose-postcard-03-under-the-palms.webp" width="485" height="720" alt="Nandalal Bose, Under the Palms" loading="lazy" decoding="async" style="height:auto"></span></div>
-<span class="label"><span class="who">Nandalal Bose</span><br><em>Under the Palms</em><br><span class="muted">Postcard 03</span></span>
-</a>
-<a class="work-card more-card" href="nandalal-bose.html#postcards">
-<div class="mat--chalk"><span class="slot-wrap"><span class="more-card__n">+11</span></span></div>
-<span class="label"><span class="who">See all 14 postcards</span><br><span class="muted">by Nandalal, on his page</span></span>
+<a class="work-card" href="work-somendranath-ghosh-steamers-on-the-river.html" data-artist="somendranath-ghosh" data-medium="drawing">
+<div class="mat--chalk"><span class="slot-wrap" style="--r:1.2417"><img class="slot-img" src="assets/img/works/thumb/somendranath-ghosh-steamers-on-the-river.webp" width="560" height="451" alt="Somendranath Ghosh, Steamers on the River, 1935" loading="lazy" decoding="async" style="height:auto"></span></div>
+<span class="label"><span class="who">Somendranath Ghosh</span><br><em>Steamers on the River</em><br><span class="muted">Pencil on paper</span></span>
 </a>
 </div>
+<p class="muted" data-c-empty hidden>Nothing matches that yet. <button type="button" class="tl no-arrow" data-c-clear>Show everything</button></p>
 </div>
 </div>
 </section>
@@ -436,8 +499,8 @@
 <a class="foot__logo" href="index.html" aria-label="House of Legends, home"><img src="assets/img/logo/hol-logo-white.svg" alt="House of Legends" width="148" height="56" loading="lazy"></a>
 <nav class="foot__nav mk" aria-label="Footer">
 <a href="story.html">The story</a>
-<a href="masters.html">The masters</a>
 <a href="santiniketan.html">Santiniketan</a>
+<a href="artists.html">Artists</a>
 <a href="collection.html">Collection</a>
 <a href="journal.html">Journal</a>
 <a href="visit.html">Visit</a>
@@ -446,7 +509,7 @@
 </div>
 <div class="foot__cols">
 <div><h3 class="mk">The house</h3><p>South Delhi<br>Address coming soon</p></div>
-<div><h3 class="mk">Opening</h3><p>1 December 2026</p></div>
+<div><h3 class="mk">Opening</h3><p>Soon</p></div>
 <div><h3 class="mk">Write to us</h3><p><a href="mailto:hello@holworld.com">hello@holworld.com</a><br><a href="tel:+919717166662">+91 97171 66662</a><br><a href="https://wa.me/919717166662">WhatsApp us</a></p></div>
 </div>
 <div class="foot__legal">
